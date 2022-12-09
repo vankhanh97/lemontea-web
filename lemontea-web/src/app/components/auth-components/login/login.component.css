@@ -1,0 +1,14 @@
+
+form {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    margin: auto;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 960px) {
+    form {
+        width: 70%;
+    }
+  }

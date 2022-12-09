@@ -6,6 +6,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthRoutingModule } from './auth-routing.module';
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from "@angular/material/form-field";
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { SignUpComponent } from './sign-up/sign-up.component';
       ReactiveFormsModule,
       HttpClientModule,
       BrowserAnimationsModule,
-      AuthRoutingModule
+      AuthRoutingModule,
+      MatInputModule,
+      MatFormFieldModule
     ]
   })
   export class AuthModule {

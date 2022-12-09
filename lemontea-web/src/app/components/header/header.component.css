@@ -2,12 +2,11 @@
     flex: 1 1 auto;
   }
 
-.b-signup {
-  margin-left: 8px;
+.c-signup {
   width: 80px;
 }
-.b-login {
-  border: none;
+.c-login {
+  margin-left: 8px;
   width: 80px;
 }
   
