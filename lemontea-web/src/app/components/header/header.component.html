@@ -1,18 +1,21 @@
-<p>
+<div>
+  <p>
     <mat-toolbar>
-     <button mat-icon-button [matMenuTriggerFor]="menu" class="example-icon" aria-label="Example icon-button with menu icon">
-      <mat-icon mat-button >menu</mat-icon>
-    </button>
-    <a mat-icon-button class="example-icon" routerLink="/" aria-label="Example icon-button with share icon">
-      <img src="assets/img/logo.png" alt="">
-    </a>
-    <span class="example-spacer"></span>
-    <button class="c-sign-up"mat-flat-button color="accent" routerLink="/sign-up">Sign up</button>
-    <button class="c-login" mat-button routerLink="/login">Login</button>
-  </mat-toolbar>
-</p>
+      <button mat-icon-button [matMenuTriggerFor]="menu" class="example-icon"
+        aria-label="Example icon-button with menu icon">
+        <mat-icon mat-button>menu</mat-icon>
+      </button>
+      <a mat-icon-button class="example-icon" routerLink="/" aria-label="Example icon-button with share icon">
+        <img src="assets/img/logo.png" alt="">
+      </a>
+      <span class="example-spacer"></span>
+      <button class="c-sign-up" mat-flat-button color="accent" routerLink="/sign-up">Sign up</button>
+      <button class="c-login" mat-button routerLink="/login">Login</button>
+    </mat-toolbar>
+  </p>
 
-<mat-menu #menu="matMenu">
-  <button mat-menu-item>Item 1</button>
-  <button mat-menu-item>Item 2</button>
-</mat-menu>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>Item 1</button>
+    <button mat-menu-item>Item 2</button>
+  </mat-menu>
+</div>

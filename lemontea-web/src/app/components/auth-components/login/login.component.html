@@ -1,13 +1,16 @@
 <div class="container">
     <form>
-        <mat-form-field color="accent" appearance="outline" class="">
-            <mat-label>Username</mat-label>
-            <input matInput placeholder="Enter your user name">
-        </mat-form-field>
-        <mat-form-field color="accent" appearance="outline" class="">
-            <mat-label>Password</mat-label>
-            <input matInput placeholder="Enter your passwprd">
-        </mat-form-field>
+        <fieldset>
+            <legend>{{ textLink }}</legend>
+            <mat-form-field color="accent" appearance="outline" class="">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="Enter your email">
+            </mat-form-field>
+            <mat-form-field color="accent" appearance="outline" class="">
+                <mat-label>Password</mat-label>
+                <input matInput placeholder="Enter your password">
+            </mat-form-field>
+            <button class="c-button-form" mat-flat-button>{{ textLink }}</button>
+        </fieldset>
     </form>
-
 </div>

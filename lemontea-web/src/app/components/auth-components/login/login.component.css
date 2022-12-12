@@ -1,14 +1,44 @@
 
+mat-label, legend, mat-form-field, button {
+    font-family: cursive
+}
+
+button {
+    font-weight: 800;
+}
+
+.c-button-form {
+    background-color: #ffcb76;
+    width: 90px;
+}
+
+.container {
+    margin-top: 30px;
+}
+
 form {
     display: flex;
     justify-content: center;
     width: 20%;
     margin: auto;
     flex-direction: column;
+    font-family: cursive
+}
+
+fieldset {
+    padding: 10% 3% 5% 20%;
+    border: 2px #ffd740 solid;
+    border-radius: 15px;
+    font-size: 20px;
 }
 
 @media only screen and (max-width: 960px) {
     form {
-        width: 70%;
+        width: 80%;
+        padding: 30px;
     }
+
+    fieldset {
+        padding: 10% 3% 5% 13%;
+     }
   }
