@@ -16,6 +16,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AuthModule } from './components/auth-components/auth.module';
 import { HttpClientModule } from '@angular/common/http';
+import { IndexPageModule } from './components/index-page/index-page.module';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     ReactiveFormsModule,
     MatNativeDateModule,
-    AppRoutingModule
+    AppRoutingModule,
+    IndexPageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
