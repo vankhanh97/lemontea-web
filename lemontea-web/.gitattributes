@@ -1,0 +1,39 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# JS files will always have LF line endings on checkout
+*.js text eol=lf
+
+# TypeScript files will always have LF line endings on checkout
+*.ts text eol=lf
+
+# JSON files will always have LF line endings on checkout
+*.json text eol=lf
+
+# CSS files will always have LF line endings on checkout
+*.css text eol=lf
+
+# HTML files will always have LF line endings on checkout
+*.html text eol=lf
+
+# Markdown files will always have LF line endings on checkout
+*.md text eol=lf
+
+# Documentation files will always have LF line endings on checkout
+*.txt text eol=lf
+
+# Graphics
+*.png binary
+*.jpg binary
+*.gif binary
+*.ico binary
+
+# Fonts
+*.ttf binary
+*.eot binary
+*.woff binary
+*.woff2 binary
+
+# Scripts
+*.sh text eol=lf
+*.bat text eol=crlf 

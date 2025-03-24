@@ -22,18 +22,35 @@ export class AuthService {
       };
     }
     
-    login(obj: { email: any; password: any; }): Observable<any> {
+    login(email: string, password: string): Observable<any> {
         return this.http.post(AUTH_API + 'login', {
-            email: obj.email,
-            password: obj.password
+            email,
+            password
         }, this.httpOptions);
-      }
+    }
+
+    register(email: string, password: string, role: string): Observable<any> {
+        return this.http.post(AUTH_API + 'register', {
+            email,
+            password,
+            role
+        }, this.httpOptions);
+    }
+
+    logout(): Observable<any> {
+        return this.http.post(AUTH_API + 'logout', {}, this.httpOptions);
+    }
       
     signOut() {
         window.localStorage.clear();
         window.sessionStorage.clear();
-      }
+    }
     
+    clearToken() {
+        window.localStorage.removeItem(TOKEN_KEY);
+        window.sessionStorage.removeItem(TOKEN_KEY);
+    }
+
     public saveTokenLocal(token: string) {
         window.localStorage.removeItem(TOKEN_KEY);
         window.localStorage.setItem(TOKEN_KEY, token);
@@ -46,9 +63,9 @@ export class AuthService {
     
     public getToken(): any {
         if(localStorage.getItem(TOKEN_KEY)!==null){
-          return localStorage.getItem(TOKEN_KEY);
-        }else {
-          return sessionStorage .getItem(TOKEN_KEY);
+            return localStorage.getItem(TOKEN_KEY);
+        } else {
+            return sessionStorage.getItem(TOKEN_KEY);
         }
-      }
+    }
 }
